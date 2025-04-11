@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>W3.CSS Template</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Raleway", sans-serif;
+    }
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/mac.jpg");
+      min-height: 100%;
+    }
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#about-us" class="w3-bar-item w3-button"><i class="fa fa-th"></i> ABOUT US</a>
+      <a href="#design" class="w3-bar-item w3-button"><i class="fa fa-th"></i> DESIGN</a>
+      <a href="#beauty-experts" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BEAUTY EXPERTS</a>
+      <a href="#our-product" class="w3-bar-item w3-button"><i class="fa fa-user"></i> OUR PRODUCT</a>
+      <a href="#best-sellers" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BEST SELLERS</a>
+      <a href="#contact-us" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar for small screens -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about-us" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#design" onclick="w3_close()" class="w3-bar-item w3-button">DESIGN</a>
+  <a href="#beauty-experts" onclick="w3_close()" class="w3-bar-item w3-button">BEAUTY EXPERTS</a>
+  <a href="#our-product" onclick="w3_close()" class="w3-bar-item w3-button">OUR PRODUCT</a>
+  <a href="#best-sellers" onclick="w3_close()" class="w3-bar-item w3-button">BEST SELLERS</a>
+  <a href="#contact-us" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+</nav>
+
+
+<header class="bgimg-1 w3-display-container w3-light taupe-min" id="home" 
+    style="background-image: url(bg.jpg); background-size: contain; background-position: center; height: 30vh;">
+    
+
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-medium w3-hide-medium">Slay every look effortlessly!</span><br>
+  
+    <p>
+      <a href="#our-product" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-responsive">
+        Shop Now & Glow Up!
+      </a>
+    </p>
+    
+  </div>  
+</header>
+
+<div class="w3-display-bottomleft w3-text-light-grey w3-large" style="padding:24px 48px;">
+  <!-- Social Media Icons -->
+  <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" style="margin-right:8px;"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram w3-hover-opacity" style="margin-right:8px;"></i></a>
+  <a href="https://snapchat.com" target="_blank"><i class="fa fa-snapchat w3-hover-opacity" style="margin-right:8px;"></i></a>
+  <a href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity" style="margin-right:8px;"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter w3-hover-opacity" style="margin-right:8px;"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" style="margin-right:8px;"></i></a>
+
+  <!-- Brand Name -->
+  <p style="margin-top:12px; font-weight:bold; font-size:16px; font-family:'Georgia', serif;">
+    Mariane's Beauty Essence
+  </p>
+</div>
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about-us">
+  <h3 class="w3-center" style="font-weight: bold;">ABOUT US</h3>
+  <p class="w3-center w3-large">Key features of our products</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-magic w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">💄 Beauty for Everyone</p>
+      <p>"Enhancing confidence, one brush at a time. Our products are made for every skin tone and style."</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-magic w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">✨ Passion for Makeup</p>
+      <p>"Where creativity meets beauty. We believe makeup is an art that empowers self-expression."</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-magic w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">🎨 Flawless Design</p>
+      <p>"Crafted for perfection, designed for you. Our products blend innovation with elegance for a flawless finish."</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-magic w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">🤝 Dedicated Support</p>
+      <p>"Here for you, every step of the way. Our team is committed to providing the best beauty experience."</p>
+    </div>
+  </div>
+</div>
+
+<!-- Design Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="design">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3><strong>We know design.</strong></h3>
+      <p>"Mastering the art of makeup to bring out your best look, every time."</p>
+      <p>Enhance your natural beauty with our carefully curated makeup collection—featuring rich lip colors, radiant blushes, and mesmerizing eyeshadows. Whether you’re going for a subtle glow or a bold transformation, each product is designed to bring out your inner confidence and style. Beauty begins here.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-medium" src="we know design background.jpg" alt="makeup" width="500" height="400">
+    </div>
+  </div>
+</div>
+
+<!-- Beauty Experts Section (similar updates can be done here) -->
+<!-- Add your Beauty Experts section here if you haven't already! -->
+
+<script>
+// Function to toggle sidebar for small screens (Optional)
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="beauty-experts">
+  <h3 class="w3-center"><strong>MEET OUR BEAUTY EXPERTS</strong></h3>
+
+  <p class="w3-center w3-large">The talented professionals behind our makeup magic</p>
+
+  <div class="w3-row-padding w3-light-grey" style="margin-top:64px">
+
+    <!-- Sophia -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="sophia glam.jpg" alt="Sophia" style="width:100%">
+        <div class="w3-container">
+          <h3><strong>Sophia Glam</strong></h3>
+
+          <p class="w3-opacity">Founder & Lead Makeup Artist</p>
+          <p>With years of experience in the beauty industry, Sophia creates flawless looks for every occasion.</p>
+          <p>
+            <button onclick="toggleContact('sophia-info')" class="w3-button w3-light-grey w3-block">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </p>
+          <div id="sophia-info" style="display:none;" class="w3-container w3-pale-yellow w3-padding">
+            <p><strong>Email:</strong> sophia@gmail.com</p>
+            <p><strong>Phone:</strong> +63 912 345 6789</p>
+            <p><strong>Instagram:</strong> @sophiaglam</p>
+            <p><strong>Location:</strong> Makati City</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mia -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="emma luxe.jpg" alt="Liana" style="width:100%; height:300px; object-fit:cover;">
+        <div class="w3-container">
+          <h3><strong>Mia Luxe</strong></h3>
+
+          <p class="w3-opacity">Makeup Stylist</p>
+          <p>Specializing in editorial and bridal looks, Mia brings elegance and creativity to every client.</p>
+          <p>
+            <button onclick="toggleContact('mia-info')" class="w3-button w3-light-grey w3-block">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </p>
+          <div id="mia-info" style="display:none;" class="w3-container w3-pale-yellow w3-padding">
+            <p><strong>Email:</strong> mia@gmail.com</p>
+            <p><strong>Phone:</strong> +63 913 456 7890</p>
+            <p><strong>Instagram:</strong> @mialuxe</p>
+            <p><strong>Location:</strong> Taguig City</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aria -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="aria belle.jpg" alt="Aria" style="width:100%">
+        <div class="w3-container">
+          <h3><strong>Aria Belle</strong></h3>
+
+          <p class="w3-opacity">Brow & Lash Specialist</p>
+          <p>From bold brows to lash perfection, Aria enhances natural beauty with expert precision.</p>
+          <p>
+            <button onclick="toggleContact('aria-info')" class="w3-button w3-light-grey w3-block">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </p>
+          <div id="aria-info" style="display:none;" class="w3-container w3-pale-yellow w3-padding">
+            <p><strong>Email:</strong> aria@gmail.com</p>
+            <p><strong>Phone:</strong> +63 914 567 8901</p>
+            <p><strong>Instagram:</strong> @aria.brows</p>
+            <p><strong>Location:</strong> Quezon City</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Liana -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="liana rose.jpg" alt="Liana" style="width:100%; height:300px; object-fit:cover;">
+
+        <div class="w3-container">
+          <h3><strong>Liana Rose</strong></h3>
+
+          <p class="w3-opacity">Skin Care Consultant</p>
+          <p>Liana ensures your canvas is flawless, offering skincare advice to prep your skin perfectly for makeup.</p>
+          <p>
+            <button onclick="toggleContact('liana-info')" class="w3-button w3-light-grey w3-block">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </p>
+          <div id="liana-info" style="display:none;" class="w3-container w3-pale-yellow w3-padding">
+            <p><strong>Email:</strong> liana@gmail.com</p>
+            <p><strong>Phone:</strong> +63 915 678 9012</p>
+            <p><strong>Instagram:</strong> @skincarewithliana</p>
+            <p><strong>Location:</strong>Pasig City</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function toggleContact(id) {
+    var info = document.getElementById(id);
+    info.style.display = (info.style.display === "none") ? "block" : "none";
+  }
+</script>
+
+  
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="our-product">
+  <h3 class="w3-center"><strong>OUR PRODUCTS</strong></h3>
+
+  
+
+  <style>
+    .product-img {
+      width: 80%;
+      height: 250px; 
+      object-fit: cover;
+    }
+  </style>
+  
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="lipstick 1.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Berry Bloom is a rich, deep berry-colored lipstick that gives your lips a bold and vibrant look. It is perfect for creating a dramatic statement, offering long-lasting wear with a smooth finish.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="lipstick 2.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Rosy Whispers is a soft, delicate pink lipstick that adds a natural, fresh touch to your lips. Its perfect for a subtle, everyday look, giving you a gentle pop of color while moisturizing and softening the lips.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="lipstick 3.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Velvet Kiss is a luxurious, velvety smooth lipstick that provides a rich, deep color with a matte finish. Its creamy texture glides effortlessly onto the lips, delivering a bold and elegant look. ">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="lipstick 4.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Sunkissed Crush is a warm, golden-toned lipstick that gives your lips a radiant, sun-kissed glow. ">
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="flower 1.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Rose Flush is a soft, rosy blush that adds a natural, healthy glow to your cheeks. With a smooth, blendable formula, it provides a flush of color that looks like you've just been kissed by the sun.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="flower 2.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Peony Petal is a delicate, soft pink blush that brings a fresh, youthful flush to your cheeks. The lightweight, buildable formula provides a natural, radiant finish, mimicking the softness and beauty of peony petals.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="flower 3.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Daisy Dusk is a soft, peachy-pink blush that captures the serene beauty of a dusk sky. With its light, buildable texture, it delivers a natural, warm glow to your cheeks, perfect for achieving a fresh, sun-kissed look. ">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="flower 4.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Flower Glow is a radiant, soft coral blush that brings a luminous flush to your cheeks. Its finely milled formula blends effortlessly, giving your skin a natural, healthy glow with a touch of warmth. ">
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="eyeshadow 1.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Sunset Muse is a rich, warm-toned eyeshadow palette inspired by the colors of a breathtaking sunset. With shades ranging from soft peach to deep bronze, it creates a stunning, multidimensional look.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="eyeshadow 2.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="
+      Midnight Bloom is a deep, captivating eyeshadow palette that evokes the mystery and elegance of a midnight garden. Featuring rich shades of plum, midnight blue, and shimmering gold, this palette is perfect for creating sultry, smoky eyes.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="eyeshadow 3.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Moonlight Petals is a soft and enchanting eyeshadow palette that captures the ethereal beauty of moonlit flowers.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="eyeshadow 4.jpg" onclick="onClick(this)" class="w3-hover-opacity product-img" alt="Golden Hour is a radiant eyeshadow palette inspired by the warm, golden glow of sunset.">
+    </div>
+  </div>
+  
+
+
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3><strong>Our Skills.</strong></h3>
+
+        <p>We specialize in enhancing natural beauty with expert makeup techniques, from flawless foundation application to stunning eye looks.</p>
+        <p>Our team excels in bridal makeup, special effects, and everyday glam, ensuring a perfect look for every occasion.</p>
+        
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Makeup Artistry</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Bridal Makeup</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Special Effects Makeup</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div id="best-sellers" class="w3-container w3-center w3-dark-grey" style="padding:128px 16px">
+  <h3><strong>BEST SELLERS</strong></h3>
+
+  <p class="w3-large">Our most loved makeup products – handpicked just for you!</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <!-- Top Pick -->
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Top Pick</li>
+        <li class="w3-padding-16"><b>BERRY BLOOM</b> - JUICY BERRY TONE</li>
+        <li class="w3-padding-16"><b>PEONY PETAL</b> - SOFT PINK </li>
+        <li class="w3-padding-16"><b>SUNSET MUSE</b> – DREAMY SUMMER SUNSET</li>
+        <li class="w3-padding-16"><b>TULIP GLOW</b> - CORAL TONED </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱4,500.00 each item</h2>
+          <span class="w3-opacity">Limited Stock Available</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="showModal('Top Pick Collection', '₱4,500.00', 'Juicy Berry, Rosy, Velvet, Sunkissed')">Shop Now</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Must-Haves -->
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48"><strong>Must-Haves</strong></li>
+
+        <li class="w3-padding-16"><b>ROSE FLUSH</b> - ROMANTIC ROSY</li>
+        <li class="w3-padding-16"><b>ROSY WHISPERS</b> - SOFT ROSY SHADE</li>
+        <li class="w3-padding-16"><b>MIDNIGHT BLOOM</b> – ENCHANTING EYES</li>
+        <li class="w3-padding-16"><b>SUNKISSED CRUSH</b> - PEACHY PINK LIPPIE</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱5,200.00 each item</h2>
+          <span class="w3-opacity">Limited Edition</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="showModal('Must-Haves Collection', '₱5,200.00', 'Rosy, Peony, Daisy, Tulip')">Shop Now</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Luxury Collection -->
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Luxury Collection</li>
+        <li class="w3-padding-16"><b>VELVET KISS</b> - PLUSH TINT GLIDES</li>
+        <li class="w3-padding-16"><b>DAISY DUSK</b> - SUBTLE PEACH</li>
+        <li class="w3-padding-16"><b>MOONLIGHT PETALS</b> – NATURAL LOOK</li>
+        <li class="w3-padding-16"><b>GOLDEN HOUR</b> – MAGICAL GLOW</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₱8,500.00 each item</h2>
+          <span class="w3-opacity">Exclusive Bundle Deal</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="showModal('Luxury Collection', '₱8,500.00', 'Sunset, Midnight, Moonlight, Golden')">Shop Now</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div id="productModal" class="w3-modal" style="display:none;">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span onclick="document.getElementById('productModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+    <div class="w3-container w3-padding-32">
+      <h2 id="modalTitle"></h2>
+      <p id="modalItems"></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <button class="w3-button w3-black" onclick="showOrderDetails()">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER DETAILS SECTION -->
+<!-- Order Details Section -->
+<div id="orderSection" class="w3-container w3-center" style="padding:64px 16px; display:none;">
+  <div class="w3-card-4 w3-beige w3-padding-32 w3-margin" style="width:80%; max-width:10000px; margin:auto; font-size:18px;">
+    <h2 class="w3-medium">Order Details</h2>
+    <p><strong>Product:</strong> <span id="orderProduct"></span></p>
+    <p><strong>Price:</strong> <span id="orderPrice"></span></p>
+    <p>Thank you for shopping with us! ❤️</p>
+    <button class="w3-button w3-black w3-margin-top" onclick="goBack()">Back to Home</button>
+  </div>
+</div>
+
+<!-- Main Section: Best Sellers (add this if not already present) -->
+<div id="mainSection">
+  <!-- Your Best Sellers content goes here -->
+</div>
+
+<script>
+  let selectedProduct = '';
+  let selectedPrice = '';
+
+  // Show the modal with product details
+  function showModal(product, price, items) {
+    selectedProduct = product;
+    selectedPrice = price;
+    document.getElementById('modalTitle').textContent = product;
+    document.getElementById('modalPrice').textContent = price;
+    document.getElementById('modalItems').textContent = items;
+    document.getElementById('productModal').style.display = 'block';
+  }
+
+  // Show the order details after "Buy Now" is clicked
+  function showOrderDetails() {
+    // Hide the modal
+    document.getElementById('productModal').style.display = 'none';
+
+    // Show the order details section
+    document.getElementById('orderProduct').textContent = selectedProduct;
+    document.getElementById('orderPrice').textContent = selectedPrice;
+    document.getElementById('orderSection').style.display = 'block';
+
+    // Optionally hide the main section (uncomment if needed)
+    // document.getElementById('mainSection').style.display = 'none';
+  }
+
+  // Go back to the main section
+  function goBack() {
+    document.getElementById('orderSection').style.display = 'none';
+    document.getElementById('mainSection').style.display = 'block';
+  }
+
+  // Close modal if user clicks outside
+  window.onclick = function(event) {
+    const modal = document.getElementById('productModal');
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact-us">
+  <h3 class="w3-center"><strong>CONTACT US</strong></h3>
+
+  <p class="w3-center w3-large">Get in Touch with Us</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> STO.TOMAS CITY BATANGAS</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +63 97833456</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: marianemillera@mail.com</p>
+    <br>
+
+    <!-- Image of location/map -->
+    <div class="w3-container w3-center" style="overflow: hidden;">
+      <img src="dior end.jpg" class="w3-image w3-pink" style="width: 100vw; height: auto; max-height: 500px; object-fit: cover; margin-top: 20px;">
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/MarianeBeautyEssence" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/MarianeBeautyEssence" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/add/MarianeBeautyEssence" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://www.pinterest.com/MarianeBeautyEssence" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/MarianeBeautyEssence" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/MarianeBeautyEssence" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    
+  </div>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
